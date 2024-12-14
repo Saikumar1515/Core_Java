@@ -39,5 +39,16 @@ public class Learn_IntegerValof {
 		
 		System.out.println(new Learn_IntegerValof("4") == new Learn_IntegerValof("4")); //false
 		System.out.println(Integer.valueOf("4") == Integer.valueOf("4")); // true
+		System.out.println(Integer.valueOf(128) == Integer.valueOf(128)); //false : bcs Can cache numbers in the range 		-128 to 127 (a total of 256 values).
+		
+//		Double: Represents a much larger range with decimal precision, making caching unfeasible.
+
+		System.out.println(Double.valueOf(22.5) == Double.valueOf(22.5));
+		
+//		 NumberFormatException
+		Integer i1 = new Integer("ten");
+		System.out.println(i1);
+		
+		
 	}
 }
